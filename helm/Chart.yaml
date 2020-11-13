@@ -1,0 +1,17 @@
+apiVersion: v1
+appVersion: 0.0.1
+description: Just a foolish golang helloworld.
+engine: gotpl
+home: https://github.com/hongmi/helloworld
+icon: https://www.mysql.com/common/logos/logo-mysql-170x115.png
+keywords:
+- golang
+- helloworld
+- demo
+maintainers:
+- email: hongmin.wang@cardinfolink.com
+  name: hongmin
+name: helloworld
+sources:
+- https://github.com/hongmi/helloworld
+version: 13.1.2

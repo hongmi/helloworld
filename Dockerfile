@@ -18,6 +18,6 @@ ADD . /go/src/github.com/deis/helloworld
 # compile the binary
 RUN cd /go/src/github.com/deis/helloworld && go install -v .
 
-EXPOSE 80
+EXPOSE 32123
 
 ENTRYPOINT ["/go/bin/helloworld"]
