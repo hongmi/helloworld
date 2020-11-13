@@ -1,0 +1,15 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: helloworld-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+  - host: helloworld.c8be70d45538b416da503bd22f071a819.cn-shanghai.alicontainer.com
+    http:
+      paths:
+      - path: /
+        backend:
+            serviceName: helloworld-service
+            servicePort: 32123
