@@ -3,10 +3,14 @@ kind: Ingress
 metadata:
   name: helloworld-ingress
   annotations:
+    alb.ingress.kubernetes.io/group.name: helloworld
     nginx.ingress.kubernetes.io/rewrite-target: /
+    kubernetes.io/ingress.class: alb
+    alb.ingress.kubernetes.io/scheme: internet-facing
+    alb.ingress.kubernetes.io/target-type: ip
 spec:
   rules:
-  - host: helloworld.c8be70d45538b416da503bd22f071a819.cn-shanghai.alicontainer.com
+  - host: helloworld.lispmm.com
     http:
       paths:
       - path: /
