@@ -10,7 +10,7 @@ metadata:
     alb.ingress.kubernetes.io/target-type: ip
 spec:
   rules:
-  - host: helloworld.lispmm.com
+  - host: hello.smallsmallbird.xyz
     http:
       paths:
       - path: /
