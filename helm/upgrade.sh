@@ -1,1 +1,1 @@
-helm upgrade helloworld .
+helm upgrade helloworld . -n helloworld

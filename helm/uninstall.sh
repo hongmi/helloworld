@@ -1,1 +1,1 @@
-helm uninstall helloworld
+helm uninstall helloworld -n helloworld
